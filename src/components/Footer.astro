@@ -1,11 +1,54 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
+<footer class="border-t py-12" style="border-color: oklch(0.87 0.12 145); background: oklch(0.96 0.008 145);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+
+      <!-- Brand column -->
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl" aria-hidden="true">🐌</span>
+          <span class="text-base font-extrabold tracking-tight font-display" style="color: oklch(0.24 0.14 145);">Banana Slug Club</span>
+        </div>
+        <p class="text-sm leading-relaxed" style="color: oklch(0.50 0.018 145);">
+          Explore Nature. Love Science. Discover Everything.<br/>
+          Built by a father &amp; son who love the natural world.
+        </p>
+      </div>
+
+      <!-- Explore column -->
+      <div class="flex flex-col gap-3">
+        <p class="text-xs font-bold uppercase tracking-widest" style="color: oklch(0.62 0.20 145);">Explore</p>
+        <ul class="flex flex-col gap-2">
+          <li><a href="#explore" class="text-sm transition-colors hover:text-brand-600" style="color: oklch(0.44 0.018 145);">Animals</a></li>
+          <li><a href="#explore" class="text-sm transition-colors hover:text-brand-600" style="color: oklch(0.44 0.018 145);">Plants &amp; Habitats</a></li>
+          <li><a href="#explore" class="text-sm transition-colors hover:text-brand-600" style="color: oklch(0.44 0.018 145);">Science Topics</a></li>
+          <li><a href="#how-it-works" class="text-sm transition-colors hover:text-brand-600" style="color: oklch(0.44 0.018 145);">For Families &amp; Homeschools</a></li>
+        </ul>
+      </div>
+
+      <!-- Visit column -->
+      <div class="flex flex-col gap-3">
+        <p class="text-xs font-bold uppercase tracking-widest" style="color: oklch(0.62 0.20 145);">The Club</p>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a href="https://www.bananaslugclub.com/" class="text-sm transition-colors hover:text-brand-600" style="color: oklch(0.44 0.018 145);">Visit Banana Slug Club →</a>
+          </li>
+          <li>
+            <a href="mailto:hello@bananaslugclub.com" class="text-sm transition-colors hover:text-brand-600" style="color: oklch(0.44 0.018 145);">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
+
+    <!-- Bottom bar -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 border-t" style="border-color: oklch(0.87 0.12 145);">
+      <p class="text-xs" style="color: oklch(0.60 0.015 145);">&copy; {year} Banana Slug Club. All rights reserved.</p>
+      <p class="text-xs" style="color: oklch(0.70 0.015 145);">Made with 🐌 by a father &amp; son who love nature.</p>
+    </div>
+
   </div>
 </footer>

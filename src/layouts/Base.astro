@@ -8,7 +8,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "let's make an amazing platform for kids to study and learn all about nature, animals, plants, and science. Bold green and yellow color theme for the website and very friendly for kids. This is going to be a v2 of our current platform Banana Slug Club. So you can just name it Banana Slug Club and you can get more info here on our old website. https://www.bananaslugclub.com/" } = Astro.props;
+const {
+  title = "Banana Slug Club — Explore Every Animal, Plant & Science Wonder",
+  description = "From banana slugs to blue whales — discover the amazing natural world through interactive guides, vivid photos, and fun science facts built for kids ages 5–14."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -18,18 +21,19 @@ const { title = "Your New Business", description = "let's make an amazing platfo
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Your New Business",
-      "description": "let's make an amazing platform for kids to study and learn all about nature, animals, plants, and science. Bold green and yellow color theme for the website and very friendly for kids. This is going to be a v2 of our current platform Banana Slug Club. So you can just name it Banana Slug Club and you can get more info here on our old website. https://www.bananaslugclub.com/",
+      "name": "Banana Slug Club",
+      "description": "Kids nature and science education platform — animals, plants, and science for curious kids ages 5–14.",
       "url": "https://banana-slug-club.onrender.com"
     }
     </script>
   </head>
-  <body class="min-h-screen flex flex-col bg-surface-50 text-surface-900 font-body antialiased">
+  <body class="min-h-screen flex flex-col antialiased" style="background: oklch(0.99 0.003 145); color: oklch(0.20 0.016 145); font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;">
     <Header />
     <main class="flex-1">
       <slot />
