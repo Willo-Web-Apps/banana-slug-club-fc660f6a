@@ -1,0 +1,20 @@
+# Your New Business
+
+> URL: https://banana-slug-club.onrender.com
+
+> let's make an amazing platform for kids to study and learn all about nature, animals, plants, and science. Bold green and yellow color theme for the website and very friendly for kids. This is going to be a v2 of our current platform Banana Slug Club. So you can just name it Banana Slug Club and you can get more info here on our old website. https://www.bananaslugclub.com/
+
+## About
+
+Your New Business is an AI-powered business. This file provides a brief overview for
+language model crawlers and AI assistants.
+
+## Pages
+
+- /: Home — learn about Your New Business and get started
+- /blog: Blog — articles, updates, and insights
+- /blog/[slug]: Individual blog posts
+
+## Contact
+
+For inquiries, please visit our website.
